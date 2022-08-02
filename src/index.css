@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.hambur{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    cursor: pointer;
+    z-index: 3;
+    background-color: var(--morado-claro);
+    position: fixed;
+    bottom: 46px;
+    right: 30px;
+    
+}
+
+.menu-hambur{
+    width: 25px;
+    height: 3px;
+    transition: 0.3s;
+    
+}
+
+.nav-gap{
+    gap: 3px;
+}
+
+.active .menu-hambur:nth-child(1){
+    transform: translateY(6px)
+    rotate(135deg);
+}
+
+.active .menu-hambur:nth-child(2){
+    transform: scale(0);
+}
+
+.active .menu-hambur:nth-child(3){
+    transform: translateY(-6px)
+    rotate(-135deg);
+}
+
+
+.carousel-item img{
+    height: 200px;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.banner{
+    background-image: url(https://fondosmil.com/fondo/22293.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -70px;
+   
+    
+
+} 
+
+.serie-card{
+    min-height: 260px;
+    position: relative;
+}
+
+.button-card{
+    position: absolute;
+    width: 100px;
+    bottom: 20px;
+    right: 20px;
+}
+
+.series-footer{
+    background-color: #111725;
+}
+
+.border-series{
+    border-bottom:2px solid #3e2125;
+}
+
+.nav-right{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+}
+
+.nav-tog{
+    height: 50px;
+}
+
+.loginForm{
+    width: 50%;
+    margin: 0 auto;
+}
